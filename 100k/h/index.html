@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet"/>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+</head>
+<body>
+    <h1>「せたがや百景」にちなんだ５文字 Wordle</h1>
+    
+    <div id="game-board">
+
+    </div>
+
+    <div id="keyboard-cont">
+        <div class="second-row">
+            <button class="keyboard-button">Del</button>
+            <button class="keyboard-button">Enter</button>
+        </div>
+
+    <div class="box">
+    <key><lst><div id="keyboard-cont">
+        <div class="first-row">
+            <button class="keyboard-button">世</button>
+            <button class="keyboard-button">北</button>
+            <button class="keyboard-button">代</button>
+            <button class="keyboard-button">下</button>
+            <button class="keyboard-button">羽</button>
+            <button class="keyboard-button">蛇</button>
+            <button class="keyboard-button">駒</button>
+            <button class="keyboard-button">弦</button>
+            <button class="keyboard-button">希</button>
+            <button class="keyboard-button">蘆</button>
+        </div>
+        <div class="second-row">
+            <button class="keyboard-button">旧</button>
+            <button class="keyboard-button">給</button>
+            <button class="keyboard-button">六</button>
+            <button class="keyboard-button">武</button>
+            <button class="keyboard-button">成</button>
+            <button class="keyboard-button">総</button>
+            <button class="keyboard-button">静</button>
+            <button class="keyboard-button">岡</button>
+            <button class="keyboard-button">五</button>
+            <button class="keyboard-button">等</button>
+       </div>
+        <div class="third-row">
+            <button class="keyboard-button">田</button>
+            <button class="keyboard-button">沢</button>
+            <button class="keyboard-button">根</button>
+            <button class="keyboard-button">崩</button>
+            <button class="keyboard-button">巻</button>
+            <button class="keyboard-button">望</button>
+            <button class="keyboard-button">花</button>
+            <button class="keyboard-button">甲</button>
+            <button class="keyboard-button">郷</button>
+            <button class="keyboard-button">家</button>
+        </div>
+        <div class="second-row">
+            <button class="keyboard-button">城</button>
+            <button class="keyboard-button">合</button>
+            <button class="keyboard-button">嘉</button>
+            <button class="keyboard-button">本</button>
+            <button class="keyboard-button">島</button>
+            <button class="keyboard-button">々</button>
+            <button class="keyboard-button">谷</button>
+            <button class="keyboard-button">川</button>
+            <button class="keyboard-button">阿</button>
+            <button class="keyboard-button">木</button>
+        </div>
+        <div class="third-row">
+            <button class="keyboard-button">實</button>
+            <button class="keyboard-button">丘</button>
+            <button class="keyboard-button">恒</button>
+            <button class="keyboard-button">州</button>
+            <button class="keyboard-button">小</button>
+            <button class="keyboard-button">屋</button>
+            <button class="keyboard-button">学</button>
+            <button class="keyboard-button">住</button>
+            <button class="keyboard-button">運</button>
+            <button class="keyboard-button">堂</button>
+        </div>
+    </div></lst>
+
+    <lst><div id="keyboard-cont">
+       <div class="first-row">
+            <button class="keyboard-button">民</button>
+            <button class="keyboard-button">美</button>
+            <button class="keyboard-button">力</button>
+            <button class="keyboard-button">公</button>
+            <button class="keyboard-button">観</button>
+            <button class="keyboard-button">緑</button>
+            <button class="keyboard-button">神</button>
+        </div>
+        <div class="second-row">
+            <button class="keyboard-button">水</button>
+            <button class="keyboard-button">相</button>
+            <button class="keyboard-button">八</button>
+            <button class="keyboard-button">春</button>
+            <button class="keyboard-button">街</button>
+            <button class="keyboard-button">無</button>
+            <button class="keyboard-button">敷</button>
+        </div>
+        <div class="third-row">
+            <button class="keyboard-button">園</button>
+            <button class="keyboard-button">宅</button>
+            <button class="keyboard-button">動</button>
+            <button class="keyboard-button">術</button>
+            <button class="keyboard-button">渓</button>
+            <button class="keyboard-button">不</button>
+            <button class="keyboard-button">院</button>
+        </div>
+        <div class="second-row">
+            <button class="keyboard-button">幡</button>
+            <button class="keyboard-button">校</button>
+            <button class="keyboard-button">風</button>
+            <button class="keyboard-button">音</button>
+            <button class="keyboard-button">道</button>
+            <button class="keyboard-button">口</button>
+            <button class="keyboard-button">社</button>
+        </div>
+        <div class="third-row">
+            <button class="keyboard-button">所</button>
+            <button class="keyboard-button">前</button>
+            <button class="keyboard-button">場</button>
+            <button class="keyboard-button">地</button>
+            <button class="keyboard-button">館</button>
+            <button class="keyboard-none">　</button>
+            <button class="keyboard-none">　</button>
+        </div>
+    </div></lst><lst class="cl"></lst>
+    </key></div>
+    </div>
+
+<script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+<script src="script.js" type="module"></script>
+<div>
+ヒントをすこし<a href="./hints.html">せたがや百景</a>
+</div>
+<div>
+ヒントをさがす<a href="https://www.google.com/search?client=opera&q=せたがや百景&sourceid=opera&ie=UTF-8&oe=UTF-8">せたがや百景</a>
+</div>
+</body>
+</html>

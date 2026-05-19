@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet"/>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+</head>
+<body>
+    <h1>「せたがや百景」にちなんだ５文字 Wordle</h1>
+    
+    <div id="game-board">
+
+    </div>
+
+    <div id="keyboard-cont">
+        <div class="second-row">
+            <button class="keyboard-button">Del</button>
+            <button class="keyboard-button">Enter</button>
+        </div>
+
+    <div class="box">
+    <key><lst><div id="keyboard-cont">
+        <div class="first-row">
+            <button class="keyboard-button">あ</button>
+            <button class="keyboard-button">か</button>
+            <button class="keyboard-button">さ</button>
+            <button class="keyboard-button">た</button>
+            <button class="keyboard-button">な</button>
+            <button class="keyboard-button">は</button>
+            <button class="keyboard-button">ま</button>
+            <button class="keyboard-button">や</button>
+            <button class="keyboard-button">ら</button>
+            <button class="keyboard-button">わ</button>
+        </div>
+        <div class="second-row">
+            <button class="keyboard-button">い</button>
+            <button class="keyboard-button">き</button>
+            <button class="keyboard-button">し</button>
+            <button class="keyboard-button">ち</button>
+            <button class="keyboard-button">に</button>
+            <button class="keyboard-button">ひ</button>
+            <button class="keyboard-button">み</button>
+            <button class="keyboard-none">　</button>
+            <button class="keyboard-button">り</button>
+            <button class="keyboard-none">　</button>
+       </div>
+        <div class="third-row">
+            <button class="keyboard-button">う</button>
+            <button class="keyboard-button">く</button>
+            <button class="keyboard-button">す</button>
+            <button class="keyboard-button">つ</button>
+            <button class="keyboard-button">ぬ</button>
+            <button class="keyboard-button">ふ</button>
+            <button class="keyboard-button">む</button>
+            <button class="keyboard-button">ゆ</button>
+            <button class="keyboard-button">る</button>
+            <button class="keyboard-button">を</button>
+        </div>
+        <div class="second-row">
+            <button class="keyboard-button">え</button>
+            <button class="keyboard-button">け</button>
+            <button class="keyboard-button">せ</button>
+            <button class="keyboard-button">て</button>
+            <button class="keyboard-button">ね</button>
+            <button class="keyboard-button">へ</button>
+            <button class="keyboard-button">め</button>
+            <button class="keyboard-none">　</button>
+            <button class="keyboard-button">れ</button>
+            <button class="keyboard-none">　</button>
+        </div>
+        <div class="third-row">
+            <button class="keyboard-button">お</button>
+            <button class="keyboard-button">こ</button>
+            <button class="keyboard-button">そ</button>
+            <button class="keyboard-button">と</button>
+            <button class="keyboard-button">の</button>
+            <button class="keyboard-button">ほ</button>
+            <button class="keyboard-button">も</button>
+            <button class="keyboard-button">よ</button>
+            <button class="keyboard-button">ろ</button>
+            <button class="keyboard-button">ん</button>
+        </div>
+    </div></lst>
+
+    <lst><div id="keyboard-cont">
+       <div class="first-row">
+            <button class="keyboard-button">が</button>
+            <button class="keyboard-button">ざ</button>
+            <button class="keyboard-button">だ</button>
+            <button class="keyboard-button">ば</button>
+            <button class="keyboard-button">ゃ</button>
+        </div>
+        <div class="second-row">
+            <button class="keyboard-button">ぎ</button>
+            <button class="keyboard-button">じ</button>
+            <button class="keyboard-button">ぢ</button>
+            <button class="keyboard-button">び</button>
+            <button class="keyboard-none">　</button>
+        </div>
+        <div class="third-row">
+            <button class="keyboard-button">ぐ</button>
+            <button class="keyboard-button">ず</button>
+            <button class="keyboard-button">づ</button>
+            <button class="keyboard-button">ぶ</button>
+            <button class="keyboard-button">ゅ</button>
+        </div>
+        <div class="second-row">
+            <button class="keyboard-button">げ</button>
+            <button class="keyboard-button">ぜ</button>
+            <button class="keyboard-button">で</button>
+            <button class="keyboard-button">べ</button>
+            <button class="keyboard-none">　</button>
+        </div>
+        <div class="third-row">
+            <button class="keyboard-button">ご</button>
+            <button class="keyboard-button">ぞ</button>
+            <button class="keyboard-button">ど</button>
+            <button class="keyboard-button">ぼ</button>
+            <button class="keyboard-button">ょ</button>
+        </div>
+    </div></lst><lst class="cl"></lst>
+    </key></div>
+    </div>
+
+<script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+<script src="script.js" type="module"></script>
+<div>
+ヒントをすこし<a href="./hints.html">せたがや百景</a>
+</div>
+<div>
+ヒントをさがす<a href="https://www.google.com/search?client=opera&q=せたがや百景&sourceid=opera&ie=UTF-8&oe=UTF-8">せたがや百景</a>
+</div>
+</body>
+</html>
