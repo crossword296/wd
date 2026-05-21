@@ -116,6 +116,19 @@ function checkGuess () {
 		letterColor = 'gold'
 	    }
 
+	    rightGuess[letterPosition] = "#"
+	}
+
+	let delay = 250 * i
+	setTimeout(()=> {
+	    //flip box
+	    animateCSS(box, 'flipInX')
+	    //shade box
+	    box.style.backgroundColor = letterColor
+	    shadeKeyBoard(letter, letterColor)
+	}, delay)
+    }
+
     if (guessString === rightGuessString) {
 	toastr.success("You guessed right! Game over!")
 	guessesRemaining = 0
