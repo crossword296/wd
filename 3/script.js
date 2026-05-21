@@ -116,6 +116,9 @@ function checkGuess () {
 		letterColor = 'gold'
 	    }
 
+	    rightGuess[letterPosition] = "#"
+	}
+
 	let delay = 250 * i
 	setTimeout(()=> {
 	    //flip box
